@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Update Threads Clothing</title>
+  <link rel="stylesheet" href="css/shirt.css">
+</head>
+
+<body>
+  <div class="container on">
+    <div class="screen">
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="box-image">
+            <img src="shirt1.png" alt="update threads clothing logo">
+            </div>
+            </div>
+            <div class="content">
+              <div class="grid-item">
+
+              <div class="text-box">
+                <b id="typedtext"></b>
+                    <br>
+                    <br>
+                </div>
+                <div class="row">
+                  <div class="grid-item">
+
+                    <button type="submit" id="submit" name="submit">Shop</button>
+                  </div>
+                </div>
+                  <div class="row">
+                    <div class="grid-item">
+
+                    <button type="submit" id="submit" name="submit">Blog</button>
+                </div>
+                  </div>
+              </div>
+            </div>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
+
+<script>
+  var i = 0;
+  var txt = 'Update Threads: Sharing your life updates in a fun, tech-inspired way';
+  var speed = 50;
+  
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("typedtext").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  typeWriter()
+  </script>
